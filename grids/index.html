@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            /* width: 100%; */
+            padding: 150px;
+            background-color: aqua;
+            border: 2px solid;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3,260px);
+            gap: 20px;
+
+        }
+        .childern{
+            /* width: 100%; */
+           
+            text-align: center;
+            font-size: 30px;
+            /* display: grid; */
+            /* grid-template-rows: repeat(3,40px);
+            grid-template-columns: repeat(1fr 1fr 1fr); */
+            padding: 20px;
+
+            
+        }
+        .redorange{
+            background-color: orangered;
+        }
+        .orange{
+            background-color: rgb(255, 128, 0);
+        }
+        .lightorange{
+            background-color: rgb(237, 174, 28);
+        }
+        .darkgreen{
+            background-color: green;
+        }
+        .green{
+            background-color: rgb(18, 250, 64);
+        }
+        .lightgreen{
+            background-color: rgb(95, 250, 18);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="childern redorange" id="childern"></div>
+        <div class="childern orange" id="childern"></div>
+        <div class="childern lightorange" id="childern"></div>
+        <div class="childern darkgreen" id="childern"></div>
+        <div class="childern green" id="childern"></div>
+        <div class="childern lightgreen" id="childern"></div>
+        
+    </div>
+</body>
+</html>
