@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            background-color: aqua;
+        }
         .parent{
             /* width: 100%; */
-            padding: 150px;
-            background-color: aqua;
-            border: 2px solid;
+            /* padding: 100px; */
+            /* background-color: aqua; */
+            /* border: 2px solid; */
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3,260px);
+            grid-template-rows: 260px 260px 50px;
             gap: 20px;
 
         }
@@ -24,9 +27,15 @@
             /* display: grid; */
             /* grid-template-rows: repeat(3,40px);
             grid-template-columns: repeat(1fr 1fr 1fr); */
-            padding: 20px;
+            
 
             
+        }
+        .a-tags{
+            display: flex;
+            /* gap: 20px; */
+            justify-content: space-around;
+            grid-column: 2/3;
         }
         .redorange{
             background-color: orangered;
@@ -46,6 +55,14 @@
         .lightgreen{
             background-color: rgb(95, 250, 18);
         }
+        a{
+            background-color: rgb(0, 4, 255);
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+
+        }
     </style>
 </head>
 <body>
@@ -56,7 +73,11 @@
         <div class="childern darkgreen" id="childern"></div>
         <div class="childern green" id="childern"></div>
         <div class="childern lightgreen" id="childern"></div>
-        
+        <div class="a-tags">
+
+            <a href="">Back</a>
+            <a href="index2.html">NEXT</a>
+        </div>
     </div>
 </body>
 </html>
